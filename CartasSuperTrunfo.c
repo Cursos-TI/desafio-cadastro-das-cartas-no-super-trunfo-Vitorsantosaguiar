@@ -38,6 +38,10 @@
     printf("Digite o número de pontos turísticos da cidade: \n");
     scanf(" %d", &pontosturisticos1);
 
+    float dimensidadePopulacional1 = populacao1 / area1;
+
+    float Pibpercapita1 = pib1 / populacao1;
+
     printf("Agora vamos criar a segunda carta do Super Trunfo!\n");
     printf("Insira os dados abaixo: \n");
 
@@ -62,6 +66,10 @@
     printf("Digite o número de pontos turísticos da cidade: \n");
     scanf(" %d", &pontosturisticos2);
 
+    float dimensidadePopulacional2 = populacao2 / area2;
+
+    float Pibpercapita2 = pib2 / populacao2;
+
     // Exibindo as informações da carta
     printf("\n--- Carta do Super Trunfo nº1 ---\n");
     printf("Estado: %c\n", estado1);
@@ -71,6 +79,8 @@
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pontosturisticos1);
+    printf("Densidade populacional: %.2f habitantes/km²\n", dimensidadePopulacional1);
+    printf("PIB per capita: %.2f bilhões por habitante\n", Pibpercapita1);
     printf("-----------------------------\n");
 
         printf("\n--- Carta do Super Trunfo nº2 ---\n");
@@ -81,6 +91,8 @@
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pontosturisticos2);
+    printf("Densidade populacional: %.2f habitantes/km²\n", dimensidadePopulacional2);
+    printf("PIB per capita: %.2f bilhões por habitante\n", Pibpercapita2);
     printf("-----------------------------\n");
     printf("Obrigado por criar suas cartas do Super Trunfo!\n");
     return 0;
